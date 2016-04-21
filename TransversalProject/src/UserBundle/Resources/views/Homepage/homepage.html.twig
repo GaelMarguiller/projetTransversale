@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet"
+          href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+</head>
+
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+    Welcome Back {{ app.user.firstname }}! <br>
+
+    <a href="/profile">Profile</a><br>
+    <a href="/logout">Log out</a>
+
+{% else %}
+    <a href="/login">Login</a><br>
+    <a href="/register">Register</a><br>
+{% endif %}
+
+
+
+

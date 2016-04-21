@@ -1,0 +1,13 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+
+<a href="/">Home</a>
+
+{% include "FOSUserBundle:Profile:show_content.html.twig" %}
+
+<a href="/profile/edit">Edit Profile</a>
+
+{% endblock fos_user_content %}
+
+
